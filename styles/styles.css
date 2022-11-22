@@ -1,0 +1,234 @@
+/* ===== YOUR CSS GOES HERE ===== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500&display=swap');
+html {
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--color-beige);
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+    margin: 0;
+}
+
+/*custom variables*/
+:root{
+    --font-title:'DM Serif Display', serif;
+    --font-menu:'Raleway', sans-serif;
+    --font-p:'Raleway', sans-serif;
+    --font-footer:'Raleway', sans-serif;
+
+    --color-coffee:#7E4E1F;
+    --color-brown:#5E3817;
+    --color-beige: #FFF4E9;
+
+    --font-size-h2:1.8em;
+    --padding-h2: 5vw;
+    --padding-h2-bottom: 0.8em;
+
+    --font-size-h3:1.5em;
+    --padding-h3: 5vw;
+    --padding-h3-bottom: 0.8em;
+
+    --padding-p: 5vw;
+    --padding-p-bottom: 1em;
+    --margin-p: 0.5em;
+
+}
+
+/* home page styles*/
+img#logo{
+    width: 7%;
+    padding: 2vh 0 0 1vw;
+}
+h1#head-font{
+    display: inline;
+    text-decoration: none;
+    font-size:calc(20px + 2vw);
+    margin-bottom: 5vh;
+}
+header{
+    background-color: #FFFFFF;
+} 
+header h1{
+    font-family:var(--font-title);
+}
+.top-screen{
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin-bottom: 1vh;
+}
+nav ul{
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-menu);
+    font-weight: 500;
+    font-size: calc(10px + 1vw);
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 5vw;
+}
+nav a{
+    text-decoration:none;
+    color: var(--color-coffee);
+}
+
+nav a:hover{
+    color: #FFFFFF;
+    background-color: var(--color-coffee);
+}
+
+#home-section{
+    position: relative;
+   /*z-index: -1;*/
+}
+#intro-p{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-title);
+    color: #FFFFFF;
+    font-size: calc(15px + 5vw);
+}
+img#background{
+    width: 100%;
+}
+.button{
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    font-weight:500;
+    font-family: var(--font-menu);
+    font-size: calc(10px + 1vw);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\2228';
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+}  
+.button:hover span {
+    padding-bottom: 5vh;
+} 
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.story-list{
+    display: block;
+    list-style: none;
+    margin-top: 2em;
+}
+.story-list li{
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    background-color: var(--color-brown);
+    padding: 5vw;
+    border: 30px solid white;
+    border-radius: 25px;
+    margin-top: 1em;
+    /*margin-left: 1em;*/
+}
+
+/*
+.story-list a:hover{
+    font-size: 1.2em;
+}
+*/
+.story-list a{
+    color: white;
+}
+
+
+
+/* beans list page styles*/
+.beans-list{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: var(--margin-p);
+}
+
+
+.beans-list li{
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    background-color: var(--color-brown);
+    padding: 5vw;
+    border: 30px solid white;
+    border-radius: 25px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.beans-list a:hover{
+    font-size: 1.2em;
+}
+
+.beans-list a{
+    color: white;
+}
+
+
+/* general styles*/
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: var(--font-size-h2);
+    font-family:var(--font-title);
+    padding-top: var(--padding-h2);
+    padding-bottom: var(--padding-h2-bottom);
+    padding-left: var(--padding-h2);
+    border-top: 10px dashed var(--color-coffee);
+  }
+
+h3{
+    color: var(--color-coffee);
+    font-size: var(--font-size-h3);
+    font-family: var(--font-title);
+    padding-left: var(--padding-h3);
+    padding-top:var(--padding-h3-bottom);
+    padding-bottom:var(--padding-h3-bottom);
+}
+
+p{
+    font-family: var(--font-p);
+    color: var(--color-brown);
+    line-height: 1.8;
+    padding-left: var(--padding-p);
+    padding-right: var(--padding-p);
+    padding-bottom: var(--padding-p-bottom);
+}
+
+.page-footer{
+    font-family: var(--font-footer);
+    padding: var(--margin-p);
+    border: 5px dotted var(--color-coffee);
+    border-radius: 30px;
+    margin: 2rem;
+}
+
+
+/* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
