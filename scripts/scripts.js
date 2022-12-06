@@ -9,7 +9,7 @@ const coffeeData = [
       bean: 'a mix of different beans',
       region: ['Brazil', 'Columbia', 'Honduras', 'Mexico'],
       price: '$14/12oz',
-      img:'/images/la-colombe.png'
+      img:'../images/la-colombe.png'
     },
    {
      brand: 'Just Bright',
