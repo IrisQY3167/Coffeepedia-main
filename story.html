@@ -4,103 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>Coffeepedia | Beans | Robusta</title>
-    <!-- PUT A DESCRIPTION IN HERE -->
+    <!-- COFFEEPEDIA -->
+    <title>Coffeepedia | Story</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <meta name="description" content="describe content of the page here...." />
     <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
     <link rel="stylesheet" href="styles.normalize.css" />
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- LINK TO YOUR STYLES -->
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
   </head>
-
   <body>
     <!-- YOUR HTML GOES HERE -->
     <header class ="top-screen">
-        <a href="index.html"><img id="logo" src="images/Coffeepedia Logo.png" width="" height="" alt="Coffeepedia logo: an illustration of a coffee bean"></a>
-        <h1 id="head-font">Coffeepedia</h1> 
-        <div class="top-screen">
-          <nav>
-          <ul>
-            <li><a href="index.html" class="link-home">Home</a></li>
-            <li><a href="beans.html" class="link-beans">Beans</a></li>
-            <li><a href="map.html" class="link-map">Map</a></li>
-            <li><a href="story.html" class="link-story">Story</a></li>
+      <a href="index.html"><img id="logo" src="images/Coffeepedia Logo.png" width="" height="" alt="Coffeepedia logo: an illustration of a coffee bean"></a>
+      <h1 id="head-font">Coffeepedia</h1> 
+      <div class="top-screen">
+        <nav>
+          <ul class="menu">
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem"><a href="beans.html">Beans</a></li>
+            <li class="menuItem"><a href="map.html">Map</a></li>
+            <li class="menuItem"><a href="story.html">Story</a></li>
           </ul>
-         </nav> 
-        </div>
-      </header>
-
-      <article id="story">
-        <h2>Coffee Production</h2>
-        <div class="cultivation"><h3>Cultivation</h3></div>
-        <p>
-          Climatic factors most important for coffee growth are temperature and rainfall. 
-          No variety can withstand a temperature in the vicinity of 32 °F (0 °C). 
-          Temperatures between 73 and 82 °F (23 and 28 °C) are the most favourable.
-        </p>
-        <p>
-          Plantations are established in cleared forestland or modified forests. 
-          The young coffee plants are spaced in rows so that the density varies between 
-          1,200 and 1,800 plants per hectare (500 and 750 plants per acre). 
-          Seedlings or cuttings raised in nurseries are carefully planted 
-          at the beginning of the rainy season; until they start producing fruit 
-          three to four years later, their care is limited largely to the trimming 
-          required to give them a strong, balanced framework and to stimulate fruiting.
-        </p>
-        <h3>Shade-grown and Sun-grown Coffee</h3>
-        <p>
-          Both shade-grown and sun-grown can be considered a form of permaculture (“permanent agriculture”) or agroforestry, 
-          and a diversity of shade-giving trees is usually encouraged to promote ecological interactions within the system. 
-          Some of these interactions directly benefit coffee production, such as improved nutrient cycling 
-          and the provision of habitat for pest-eating birds and useful pollinators, 
-          while others are more broadly beneficial, such as improved carbon sequestration and water filtration, 
-          decreased soil erosion, and the preservation of biodiversity.
-        </p>
-        <p>
-          Shade-grown coffee is considered more labour-intensive than sun-grown coffee and produces lower yields. 
-          However, it produces a superior flavour in the beans and is frequently sold at higher prices as a specialty coffee. 
-          In the late 20th and early 21st centuries there was renewed interest in shade-grown coffee as a 
-          sustainable farming method, and most organic coffee was shade-grown. 
-          In 2021 about 25 percent of global coffee production was considered shade-grown.
-        </p>
-        <h3>Harvesting and processing</h3>
-        <p>
-          The ripened fruits of the coffee plant are known as coffee cherries, and each cherry generally 
-          contains two coffee seeds (“beans”) positioned flat against one another. 
-          About 5 percent of cherries contain only one seed; called peaberries, 
-          those single seeds are smaller and denser and produce, in the opinion of some, a sweeter, more flavourful coffee. 
-          The fruit is gathered by hand when it is fully ripe and red-purple in colour.
-        </p>
-        <p>
-          The cherries are processed by disengaging the coffee seeds from their coverings 
-          and from the pulp and by drying the seeds from an original moisture content of 65–70 percent water 
-          by weight to 12–13 percent; all beans must be removed from their fruit and dried before roasting. 
-          Three techniques are used for processing the coffee: the dry, or “natural,” process, 
-          the wet (and washed) process, and a hybrid process called the semi-washed, or “pulped natural,” method. 
-          The coffee resulting from these processes is called green coffee, which is then ready for roasting.
-        </p>
-        <h3>Storage</h3>
-        <p>
-          The prolonged storage of coffee in the producing countries presents problems, 
-          especially in the warm and humid coastal regions, where molds and parasites may develop and cause damage; 
-          for that reason coffee from those areas is exported as quickly as possible. 
-          In moderate climates the conservation of dry lots does not pose a problem as long as 
-          they are stocked in well-ventilated places.
-        </p>
-        <h3>Grading</h3>
-        <p>
-          The practice of grading and classifying coffee gives sellers and buyers a guarantee concerning 
-          the origin, nature, and quality of the product to aid in negotiations. 
-          Each coffee-producing country has a certain number of defined types and grades—based on characteristics 
-          such as growing altitude and region, botanical variety, method of processing, roast appearance, and bean size, 
-          density, and defects—but there is no universal grading and classification system.
-        </p>
-      </article>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+          <ul class="wide-nav">
+            <li class="nav-hor"><a href="index.html">Home</a></li>
+            <li class="nav-hor"><a href="">Beans</a></li>
+            <li class="nav-hor"><a href="">Map</a></li>
+            <li class="nav-hor"><a href="story.html">Story</a></li>
+          </ul>
+       </nav> 
+      </div>
+    </header>
+    
+    <section class="slider-wrapper">
+        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+         
+        <ul class="slides-container" id="slides-container">
+          <li class="slide">
+            <div class="story-wrapper"><img class="story-background" src="images/story.jpg" height="" width="" alt="Coffee beans being roasted">
+            <h2 class="story-title">Story</h2>
+            </div>
+            <div class="story-info">
+            <p class="story-info-p">Coffee production is usually done in large commercial operations. The two major species of coffee plants (Coffea arabica and C. canephora; family Rubiaceae) are tropical evergreen shrubs or small trees of African origin. They are grown for the seeds, or beans, which are roasted, ground, and sold for brewing coffee. This article treats the cultivation of coffee plants and the harvesting and processing of the beans.</p>
+            <p class="story-info-p">The Arabica species of coffee (C. arabica) is cultivated mostly in Latin America, while the Robusta variety of C. canephora predominates in Africa. Arabica is considered a milder, more flavourful and aromatic brew than Robusta, though the latter is a hardier plant and is thus cheaper to produce. It has twice the caffeine content of Arabica and is typically the bean of choice for inexpensive commercial coffee brands. Both coffee species are also grown in India, Indonesia, and other Asian countries. There are many varieties, forms, and types of each. The effects of environment and cultivation further increase this diversity.</p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="story-wrapper"><img class="story-background" src="images/story-cultivation.jpg" height="" width="" alt="Coffee berries on a branch">
+            <h2 class="story-title">Cultivation</h2>
+            </div>
+            <div class="story-info">
+            <p class="story-info-p">Climatic factors most important for coffee growth are temperature and rainfall. No variety can withstand a temperature in the vicinity of 32 °F (0 °C). Temperatures between 73 and 82 °F (23 and 28 °C) are the most favourable. Rainfall of 60 to 80 inches (1,500 to 2,000 mm) per year is required along with a dry period of two to three months for the Arabica. Irrigation is required where annual rainfall is less than 1 metre (40 inches). The Arabica species is more delicate and vulnerable to pests than Robusta and requires a cool subtropical climate; it must grow at higher elevations of 600–2,000 metres (2,000–6,500 feet) and requires a lot of moisture and has fairly specific shade requirements. The Robusta variety, as its name suggests, is hardier and can grow at lower altitudes—from sea level to 600 metres.</p>
+            <p class="story-info-p">Plantations are established in cleared forestland or modified forests. The young coffee plants are spaced in rows so that the density varies between 1,200 and 1,800 plants per hectare (500 and 750 plants per acre). Seedlings or cuttings raised in nurseries are carefully planted at the beginning of the rainy season; until they start producing fruit three to four years later, their care is limited largely to the trimming required to give them a strong, balanced framework and to stimulate fruiting.</p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="story-wrapper"><img class="story-background" src="images/story-processing.jpg" height="" width="" alt="">
+            <h2 class="story-title">Processing - Natural Process</h2>
+            </div>
+            <div class="story-info">
+            <p class="story-info-p">Also known as the dry process, natural processing is the most old school way to process coffee. After picking the coffee cherries from the coffee trees, they are spread out in thin layers to dry in the sun. The drying stations can be a little different depending on the farm or region; some use brick patios, others special raised beds which enable air to flow around the cherries, thus more even drying. To avoid mold, fermentation or rotting, the cherries are turned regularly. Once the cherries are properly dry, the skin and dried fruit flesh are removed mechanically and the green coffee is stored and “rested” before exporting it.</p>
+            <p class="story-info-p">The natural process is common in regions where there is no access to water such as Ethiopia and some regions in Brazil. The process is commonly traditional in the regions where it is used and no big development is seen in the natural processing during past years.</p>
+            <p class="story-info-p">Natural processed coffees definitely divide baristas' opinions in terms of flavor; some love them, others hate them. The natural process definitely adds flavors to the coffee such as fruitiness and sweetness regardless of variety and region. Common flavor notes for natural processed coffee are blueberry, strawberry, tropical fruits and honey but on the flip side, there can also be wild, fermented flavors and alcohol-like notes. Natural coffees are often described to have red wine like flavors when compared to washed coffees. The natural processed coffees can be really useful for roasteries and baristas to showcase what coffee can taste like and open consumers minds but on the other hand they can also be really off-putting for people who don't like fermented and wild flavors in the cup.</p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="story-wrapper"><img class="story-background" src="images/story-processing.jpg" height="" width="" alt="">
+            <h2 class="story-title">Processing - Wet Process</h2>
+            </div>
+            <div class="story-info">
+            <p class="story-info-p">Also known as wet processing method, is the other main way to process coffee. In the washed process all of the fruit flesh is removed mechanically from the coffee bean before the beans are dried. Removing the fruit flesh is done with a machine called de-pulper. After de-pulping the beans are put in a water tank where the fermentation process will remove the remainder of the fruit flesh. The amount of time that the fermentation requires depends on the climate and altitude. In hotter regions the fermentation will take less time and vice versa. Usually the fermentation requires 24-72 hours and if the coffee beans are fermented for too long, it will have a negative effect on the flavor of the coffee. After the fermentation is ready, the coffee beans are washed to remove any leftover flesh and then it is ready to be dried. Drying in the washed process is done similarly as in natural process so in brick patios or raised beds. To ensure even drying the beans are turned regularly as in natural processing. The beans can be also mechanically dried, especially in regions where there isn't enough sunshine or excess humidity.</p>
+            <p class="story-info-p">The washed process leads to bright and acidic flavors in the cup. It's commonly highly appreciated among roasters and baristas due to increased complexity and cleaner cup profiles. Many describe washed coffees to have white wine like flavors when compared to natural coffees. Many farmers or producers choose the washed process because properly done it reduces the risk of defects and it's a more stable way to process coffee. On the other hand, it requires more water than other processing methods so it's more expensive for the farmers or producers.</p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="story-wrapper"><img class="story-background" src="images/story-processing.jpg" height="" width="" alt="">
+            <h2 class="story-title">Processing - Honey Process</h2>
+            </div>
+            <div class="story-info">
+            <p class="story-info-p">The honey process is used commonly mainly in Central American countries such as Costa Rica and El Salvador. The cherries are mechanically depulped but the de-pulping machines are set to leave a specific amount of flesh on the beans. After de-pulping the beans go straight to the drying tables or patios to dry. As there is less flesh surrounding the beans, the risk of over-fermentation is lower than in the natural process but the overall sweetness and body in the cup are increased by the sugars in the remaining flesh. When well done, honey processed coffee has positive attributes from washed and natural coffees; sweetness of naturals and brightness of washed.</p>
+            <p class="story-info-p">Honey processed coffee is quite often referred to with colors; black, red, yellow and white honey. The color refers to the amount of fruit flesh that is left on the bean after de-pulping. Black honeys, that are also black in color have the most flesh left on the bean and white honeys the are left only a bit of flesh. This of course has an effect on the flavor of the coffee; black honeys are like naturals and white honeys like washed coffees.</p>
+            <p class="story-info-p">Similar to honey processing is a pulped natural process which uses a bit more water and strips the beans fully during de-pulping. Pulped natural process is mainly used in Brazil.</p>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="story-wrapper"><img class="story-background" src="images/story-grading.jpg" height="" width="" alt="Coffee beans in a woven bag">
+            <h2 class="story-title">Grading</h2>
+            </div>
+            <div class="story-info">
+            <p class="story-info-p">The practice of grading and classifying coffee gives sellers and buyers a guarantee concerning the origin, nature, and quality of the product to aid in negotiations. Each coffee-producing country has a certain number of defined types and grades—based on characteristics such as growing altitude and region, botanical variety, method of processing, roast appearance, and bean size, density, and defects—but there is no universal grading and classification system.</p>
+            <p class="story-info-p">Fair Trade coffee, part of the larger Fair Trade movement, arose to ensure that coffee is harvested and processed without child labour and dangerous herbicides and pesticides and that growers and exporters, particularly in the poorer regions of the coffee-growing world, are paid a fair price. How well such Fair Trade standards are enforced is a matter of controversy.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    <footer>
+    <p><a href="credit.html">Fangfei Liu, Qingyue Xue, Rayne Schulman &copy; <script>document.write(new Date().getFullYear())</script></a></p>
+    </footer>
 
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
   </body>

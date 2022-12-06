@@ -1,5 +1,5 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
-
+/*Beans Page*/
 const coffeeData = [
     {
       brand: 'La Colombe',
