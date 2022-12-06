@@ -1,61 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>Coffeepedia | Map</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeepidia | Map</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles.normalize.css" />
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/navStory.js" defer></script>
-  </head>
-  
-  <body>
-    <!-- YOUR HTML GOES HERE -->
-    <header class ="top-screen">
-      <a href="index.html"><img id="logo" src="images/Coffeepedia Logo.png" width="" height="" alt="Coffeepedia logo: an illustration of a coffee bean"></a>
-      <h1 id="head-font">Coffeepedia</h1> 
-      <div class="top-screen">
-        <nav>
-          <ul class="menu">
-            <li class="menuItem"><a href="index.html">Home</a></li>
-            <li class="menuItem"><a href="beans.html">Beans</a></li>
-            <li class="menuItem"><a href="map.html">Map</a></li>
-            <li class="menuItem"><a href="story.html">Story</a></li>
-          </ul>
-          <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-          </button>
-          <ul class="wide-nav">
-            <li class="nav-hor"><a href="index.html">Home</a></li>
-            <li class="nav-hor"><a href="beans.html">Beans</a></li>
-            <li class="nav-hor"><a href="map.html">Map</a></li>
-            <li class="nav-hor"><a href="story.html">Story</a></li>
-          </ul>
-       </nav> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./map.js" defer></script>
+</head>
+<body>
+  <header class ="top-screen">
+    <a href="index.html"><img id="logo" src="images/Coffeepedia Logo.png" width="" height="" alt="Coffeepedia logo: an illustration of a coffee bean"></a>
+    <h1 id="head-font">Coffeepedia</h1> 
+    <div class="top-screen">
+      <nav>
+        <ul class="menu">
+          <li class="menuItem"><a href="index.html">Home</a></li>
+          <li class="menuItem"><a href="beans.html">Beans</a></li>
+          <li class="menuItem"><a href="map.html">Map</a></li>
+          <li class="menuItem"><a href="story.html">Story</a></li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+        <ul class="wide-nav">
+          <li class="nav-hor"><a href="index.html">Home</a></li>
+          <li class="nav-hor"><a href="beans.html">Beans</a></li>
+          <li class="nav-hor"><a href="map.html">Map</a></li>
+          <li class="nav-hor"><a href="story.html">Story</a></li>
+        </ul>
+     </nav> 
+    </div>
+  </header>
+
+    <div class="modal fade" id="brazilModal" tabindex="-1" aria-labelledby="brazilModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="brazilModalLabel">Brazil info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Brazil has been the world's largest producer of coffee for the last 150 years, currently producing about a third of all coffee. There are about 220,000 coffee farms involved in the industry, with plantations covering about 27,000 km2 (10,000 sq mi) of the country. Plantations are mainly located in the southeastern states of Minas Gerais, São Paulo, and Paraná where the environment and climate provide ideal growing conditions. Minas Gerais alone accounts for about half of the country's production. Most plantations are harvested in the dry seasons of June through September, usually in one huge annual crop when most berries are ripe.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
       </div>
-    </header>>
+      <div class="modal fade" id="sumatraModal" tabindex="-1" aria-labelledby="sumatraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="sumatraModalLabel">Sumatra info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Sumatra: 
+              <bold>How is Sumatra Coffee Made?</bold>
+              Coffee from Sumatra is usually wet-hulled. This gives the beans a different flavor and reduces acidity. In the article, I explain exactly what this means.
+              <bold>Is Sumatra Coffee a Dark Roast?</bold>
+              No, this is entirely up to the roastmaster who’s roasting the beans. It can be light, medium, or dark.However, quite often Sumatra is on the darker and more full-bodied side.
+              <bold>Is Sumatra Coffee Low in Acid?</bold>
+              Yes, as a rule of thumb, Sumatra coffee is less acidic than coffee from Africa and Latin America. There are many reasons for this; the main one is the unique processing method that farmers employ after harvest.
+              <bold>How Much Caffeine in Sumatra Coffee? </bold>
+              Coffee from Sumatra is mostly from the arabica species. This means that the caffeine   level is pretty standard. Arabica coffee has less caffeine than robusta, but on the other hand, it tastes better.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="hondurasModal" tabindex="-1" aria-labelledby="hondurasModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="hondurasModalLabel">Honduras info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Coffees grown in Honduras, which borders Nicaragua, El Salvador and Guatemala, generally having tasting notes describing them as full-bodied with a sweet and mild taste.
+              Much of the coffee grown in Honduras historically was fairly unremarkable and often used as a base in coffee blends, however it has emerged as a force in its own right in coffee reviews in recent years and is often sought after.
+              Due to a lack of infrastructure, Honduran coffees were typically sent over to neighbouring Guatemala to earn a higher price. With investment from the government into education and processing techniques, as well as infrastructure such as roads and government programs, Honduran coffees are now recognized the world over - all within a few short years.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sumatraModal" tabindex="-1" aria-labelledby="sumatraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="sumatraModalLabel">Sumatra info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Sumatra: 
+              <bold>How is Sumatra Coffee Made?</bold>
+              Coffee from Sumatra is usually wet-hulled. This gives the beans a different flavor and reduces acidity. In the article, I explain exactly what this means.
+              <bold>Is Sumatra Coffee a Dark Roast?</bold>
+              No, this is entirely up to the roastmaster who’s roasting the beans. It can be light, medium, or dark.However, quite often Sumatra is on the darker and more full-bodied side.
+              <bold>Is Sumatra Coffee Low in Acid?</bold>
+              Yes, as a rule of thumb, Sumatra coffee is less acidic than coffee from Africa and Latin America. There are many reasons for this; the main one is the unique processing method that farmers employ after harvest.
+              <bold>How Much Caffeine in Sumatra Coffee? </bold>
+              Coffee from Sumatra is mostly from the arabica species. This means that the caffeine   level is pretty standard. Arabica coffee has less caffeine than robusta, but on the other hand, it tastes better.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="peruModal" tabindex="-1" aria-labelledby="peruModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="peruModalLabel">Peru info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Peru started growing coffee in the 1700s. For much of the country's history, coffee was kept as a domestic product.Coffee grown here is most often the result of the natural process without the use of pesticides. 
+              Coffee is grown in many areas of Peru, including the Lower Amazon Basin's jungle regions. The wide range of altitude from the Lower Basin of the Andes mountains to the higher regions provides an optimal environment for growing arabica beans.
+              Coffee grown in lower elevations have a mild brightness, medium body, smooth nutty taste, rich sweetness, and fruity flavors. While coffee grown in higher elevations like Cusco and Machu Pichu's surrounding areas have a brighter and more floral aroma. Higher elevations provide specialty-grade coffee.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="guatemalaModal" tabindex="-1" aria-labelledby="guatemalaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="guatemalaModalLabel">Guatemala info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Coffee from Guatemala is known to be sweet with a medium to full body and lots of chocolate flavor notes.
+                    Many coffees will have either a bittersweet cocoa taste or a sweet, milk chocolate taste, as well as notes of nuts and toffee.
+                    Many people have also noted a smoky element to the beans, as well.
+                    Guatemalan beans grown at higher elevations, such as those at Huehuetenango, will have brighter flavor notes ranging from berries to green apple to citrus.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="columbiaModal" tabindex="-1" aria-labelledby="columbiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="columbiaModalLabel">Columbia info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Colombian coffee is coffee that has been grown in the various departments within Colombia. It is not its own variety of coffee bean. Colombian coffee is prized for its excellent flavour and aroma as almost all the coffee grown is of the arabica variety.
+                Colombia is the third-highest producer of coffee behind Brazil and Vietnam. Coffee was probably first introduced to Colombia in 1723 by the Jesuits. The spread was initially very slow and didn’t become significant until the end of the 19th-century. By 1912, coffee beans made up a whopping 50% of Colombia’s total exports.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="pic">
+    <img id="guinea" src="pin1.png" alt="">
+    <img id="brazil" src="pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#brazilModal">
+    <img id="sumatra" src="pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#sumatraModal">
+    <img id="honduras" src="pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#hondurasModal">
+    <img id="peru" src="pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#peruModal">
+    <img id="guatemala" src="pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#guatemalaModal">
+    <img id="columbia" src="pin1.png" alt="" data-bs-toggle="#columbiamodal" data-bs-target="#Modal">
+    <img id="ethiopia" src="pin1.png" alt="">
+     
+    </div>
 
-    <article id="map">
-      <h2>Coffee Map</h2>
-
-    </article>
     <footer>
       <p><a href="credit.html">Fangfei Liu, Qingyue Xue, Rayne Schulman &copy; <script>document.write(new Date().getFullYear())</script></a></p>
     </footer>
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-  </body>
+</body>
 </html>

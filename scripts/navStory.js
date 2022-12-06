@@ -1,4 +1,4 @@
-/* Nav menu & Story */
+
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
@@ -39,4 +39,4 @@ nextButton.addEventListener("click", (event) => {
 prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
-});
+}); 

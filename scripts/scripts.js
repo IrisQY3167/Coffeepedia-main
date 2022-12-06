@@ -1,5 +1,5 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
-/*Beans Page*/
+
 const coffeeData = [
     {
       brand: 'La Colombe',
@@ -9,7 +9,7 @@ const coffeeData = [
       bean: 'a mix of different beans',
       region: ['Brazil', 'Columbia', 'Honduras', 'Mexico'],
       price: '$14/12oz',
-      img:'../images/la-colombe.png'
+      img:'images/la-colombe.png'
     },
    {
      brand: 'Just Bright',
@@ -19,7 +19,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'central and south America',
      price:'$5.12/12oz',
-     img: '../images/just-bright.png'
+     img: 'images/just-bright.png'
    },
    {
      brand:'Melitta',
@@ -29,7 +29,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Columbia',
      price:'$6.49/11oz',
-     img:'../images/melitta.png'
+     img:'images/melitta.png'
     },
    {
      brand:'Death Wish',
@@ -39,7 +39,7 @@ const coffeeData = [
      bean:['Arabica', 'Robusta'],
      region:['coffee belt', 'others'],
      price:'$17.48/16oz',
-     img:'../images/death-wish.png'
+     img:'images/death-wish.png'
     },
    {
      brand:'Superlost Coffee',
@@ -49,7 +49,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Columbia',
      price:'$15/8oz',
-     img:'../images/superlost.png'
+     img:'images/superlost.png'
     },
    {
      brand:'Lavazza',
@@ -59,7 +59,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'central and south America',
      price:'$8.49/16oz',
-     img:'../images/lavazza.png'
+     img:'images/lavazza.png'
     },
    {
      brand:"Peet's Coffee",
@@ -69,7 +69,7 @@ const coffeeData = [
      bean:'Arabica',
      region:['Africa','Arabia', 'America'],
      price:'$18.95/16oz',
-     img:'../images/peets-coffee.png'
+     img:'images/peets-coffee.png'
     },
    {
      brand:'Good & Gather Organic',
@@ -79,7 +79,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Mexico',
      price:'$7.39/12oz',
-     img:'../images/good-gather.png'
+     img:'images/good-gather.png'
     },
    {
      brand:'Intelligentsia',
@@ -89,7 +89,7 @@ const coffeeData = [
      bean:'Arabica',
      region:['Brazil', 'Costa Rica', 'El Salvador'],
      price:'$16.5/12oz',
-     img:'../images/intelligentsia.png'
+     img:'images/intelligentsia.png'
     },
    {
      brand:'Copper Cow Coffee',
@@ -99,7 +99,7 @@ const coffeeData = [
      bean:['Arabica', 'Robusta'],
      region:'Vietnamese',
      price:'$17/12oz',
-     img:'../images/copper-cow.png'
+     img:'images/copper-cow.png'
     },
    {
      brand:'Counter Culture Coffee',
@@ -109,7 +109,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:['Honduras', 'Mexico'],
      price:'$13.42/12oz',
-     img:'../images/counter-culture.png'
+     img:'images/counter-culture.png'
     },
    {
      brand:'Equal Exchange',
@@ -129,7 +129,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Guatemala',
      price:'$17/12oz',
-     img:'../images/dope-coffee.png'
+     img:'images/dope-coffee.png'
     },
    {
      brand:"Seattle's Best Coffee",
@@ -139,7 +139,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Latin America',
      price:'$12/12oz',
-     img:'../images/seattles-best.png'
+     img:'images/seattles-best.png'
     },
    {
      brand:'Bizzy Cold Brew',
@@ -149,7 +149,7 @@ const coffeeData = [
      bean:'Arabica',
      region:['Guatemala', 'Peru', 'Nicaragua'],
      price:'$14.99/16oz',
-     img:'../images/bizzy.png'
+     img:'images/bizzy.png'
     },
    {
      brand:'Fresh Roasted Coffee',
@@ -159,7 +159,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Tanzania',
      price:'$13.95/12oz',
-     img:'../images/fresh-roasted.png'
+     img:'images/fresh-roasted.png'
     },
    {
      brand:'CoffeeZyme',
@@ -169,7 +169,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Brazil',
      price:'$14.99/16oz',
-     img:'../images/coffeezyme.png'
+     img:'images/coffeezyme.png'
     },
    {
      brand:'Shock',
@@ -179,7 +179,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Brazil',
      price:'$14.99/16oz',
-     img:'../images/shock.png'
+     img:'images/shock.png'
     },
    {
      brand:'Cafés Granell',
@@ -189,7 +189,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Indonesia',
      price:'$109.98/3.5oz',
-     img:'../images/garnell.png'
+     img:'images/garnell.png'
     },
    {
      brand:'CoffeeAM',
@@ -199,7 +199,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Jamaica',
      price:'$54.95/16oz',
-     img:'../images/coffeeam.png'
+     img:'images/coffeeam.png'
     },
  ];
 
@@ -311,7 +311,4 @@ function showBean() {
   //how to call drawCoffee
   drawCoffee(final);
 }
-
-
-
 

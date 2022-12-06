@@ -61,6 +61,10 @@ header h1{
     z-index: 101;
 }
 
+div#quiz{
+    height: 800px;
+}
+
 /*Beginning of Nav Bar*/
 .hamburger {
     position: fixed;
@@ -272,40 +276,7 @@ div#quiz{
     padding-bottom: 0px;
 }
 
-
-
-/* no longer needed
-.beans-list{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin: var(--margin-p);
-}
-
-
-.beans-list li{
-    font-size: var(--font-size-h2);
-    font-weight: 600;
-    background-color: var(--color-brown);
-    padding: 5vw;
-    border: 30px solid white;
-    border-radius: 25px;
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-.beans-list li:hover{
-    background-color: var(--color-coffee);
-}
-
-.beans-list a{
-    color: white;
-} */
-
-
 /* general styles*/
-
 article{
     margin-bottom: 2em;
 }
@@ -439,17 +410,115 @@ p{
   }
 
   footer{
-    background-color: #fff4e9;
+    background-color: #FFFFFF;
     color: #72481F;
-    padding: 1em;
   }
 
   footer a{
     text-decoration: none;
     color: #72481F;
+    font-size: calc(0.5em + 0.5vw)
+  }
+
+  footer p{
+    text-align: center;
   }
 
 /*End of Story Styling*/
+
+/*Map styling*/
+.pic{
+    width: 700px;
+    height: 400px;
+    background-image:url(map.png);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    z-index: 0;
+}
+
+.pic img{
+    position:relative;
+    height: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+    transform: scale(1)
+}
+.modal-body{
+    font-family:'DM Serif Display', serif;
+    z-index: 5000;
+    color: #7E4E1F;
+    border: 1px dotted #5E3817;
+    text-align: center;
+}
+  
+h1.modal-body{
+    color: #5E3817;
+  }
+  
+.text .hideText {
+    opacity: 0;
+}
+
+.pic img:hover{
+    opacity: 1;
+    transform: scale(2);
+}
+
+#brazil{
+    top: 290px;
+    left:150px;
+}
+
+#guinea{
+    top:270px;
+    left:580px;
+}
+
+#sumatra{
+    top:275px;
+    left:430px;
+}
+
+#honduras{
+    top:226px;
+    left:26px;
+}
+
+#peru{
+    top:280px;
+    left:30px;
+}
+
+#guatemala{
+    top:220px;
+    left:-45px;
+}
+
+#columbia{
+    top:252px;
+    left:-27px;
+}
+
+#ethiopia{
+    top:244px;
+    left:175px;
+}
+
+.pic brazil{
+    position:relative;
+    height: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+    transform: scale(1)
+}
+
+/*End of map styling*/
 
 
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
