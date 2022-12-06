@@ -135,38 +135,72 @@ img#background{
 
 /* brands list page styles*/
 
-.brandCard-control{
-    padding-left: var(--padding-h2);
+#brands > h2{
+    font-size: calc(2vw + 16px);
 }
 
+.brandCard-control{
+    padding-left: var(--padding-h2);
+    padding-bottom: var(--padding-h2-bottom);
+}
+
+.brandCard-control > label{
+    font-size: 20px;
+    font-family: var(--font-p);
+    font-weight: 600;
+    color: var(--color-coffee);
+}
+
+#roast-filter-choice , #beans-filter-choice{
+    width: 120px;
+    height: 30px;
+    border: 1px solid var(--color-brown);
+    font-size: 18px;
+    color: var(--color-coffee);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px var(--color-brown);
+    margin-left: var(--margin-p);
+}
+
+
 #clearFilter{
+    height: 30px;
     cursor: pointer;
+    border: 1px solid var(--color-brown);
+    font-size: 18px;
+    color: white;
+    background-color: var(--color-coffee);
+    border-radius: 5px;
+    box-shadow: 2px 3px var(--color-brown);
+    margin-left: var(--margin-p);
 }
 
 #brands-list{
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: var(--margin-p);
 } 
 
 #brands-list img{
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
 }
 
 .brand-card{
+    
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     perspective: 1000px;
-    margin: 2rem;
+    margin: 1.2rem;
   }
 
 .brand-inner{
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -178,8 +212,8 @@ img#background{
 
 .brand-front, .brand-back{
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
@@ -197,6 +231,7 @@ img#background{
 }
 
 .brand-back > h3{
+    padding-top: 0.1rem;
     padding-bottom: 0.1rem;
 }
 .brand-back > h4{
@@ -204,6 +239,7 @@ img#background{
     padding-bottom: 0.7rem;
 }
 .brand-back > p{
+    font-size: 14px;
     padding-bottom: 0px;
 }
 
@@ -255,7 +291,6 @@ h2{
     padding-top: var(--padding-h2);
     padding-bottom: var(--padding-h2-bottom);
     padding-left: var(--padding-h2);
-    border-top: 10px solid var(--color-coffee);
   }
 
 h3{
