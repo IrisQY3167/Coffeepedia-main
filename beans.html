@@ -39,256 +39,43 @@
       <h2>BRANDS</h2>
 
       <div class="brandCard-control">
-        <label for="brandCard-sort-choice">Sort by:</label>
-        <input list="brandCard-sort-list" id="brandCard-sort-choice" 
-        name="brandCard-sort-choice"/>
-        <datalist id="brandCard-sort-list">
-          <option value="brand name A-Z">brand name A-Z</option>
-          <option value="brand name Z-A">brand name Z-A</option>
-          <option value="price low-high">price low-high</option>
-          <option value="price high-low">price high-low</option>
-          <option value="roast level light-dark">roast level light-dark</option>
-          <option value="roast level dark-light">roast level dark-light</option>
-          <option value=""></option>
-          <option value=""></option>
+        <label for="brandCard-filter-choice">Filter by:</label>
+        
+      <select list="roast-filter-list" id="roast-filter-choice" 
+        name="roast-filter-choice">
+        <datalist id="roast-filter-list">
+          <option value="" disabled selected hidden>Roast Level</option>
+          <option value="all">All</option>
+          <option value="roastLight">light</option>
+          <option value="roastMedium">medium</option>
+          <option value="roastDark">dark</option>
+          
+          
         </datalist>
-
-        <button>Show Sorted Brands</button>
-        <button>Show All Brands</button>
+      </select>
+  
+      <select list="beans-filter-list" id="beans-filter-choice" 
+        name="beans-filter-choice">
+        <datalist id="beans-filter-list">
+          <option value="" disabled selected hidden>Beans</option>
+          <option value="all">All</option>
+          <option value="beanArabica">Arabica</option>
+          <option value="beanRobusta">Robusta</option>
+          <option value="beanOthers">others</option>
+          
+        </datalist>
+      </select>
+  
+        <button id="allBrands">Show All Brands</button>
 
       </div>
 
-      <ul class="brands-list">
-        <li>
-          <ul class="brand-card">
-            <div class="brand-name">
-              <li><label for="brand-product"><strong>La Colombe - Corsica</strong></label></li>
-            </div>
-            <div class="brand-picture">
-              <li><label for="brand-pic">img</label></li>
-            </div>
-            <div class="brand-content">
-              <li><label for="brand-roastLevel">Roast Level: dark</label></li>
-              <li><label for="brand-flavor">Flavor: baker's chocolate, red wine, and spices</label></li>
-              <li><label for="brand-bean">Bean: a mix of different beans</label></li>
-              <li><label for="brand-area">Area: Brazil, Colombia, Honduras, and Mexico</label></li>
-              <li><label for="brand-price">Price: $14/12oz</label></li>
-          </div>
-          </ul>        
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Just Bright - Light Roast</label></li>
-            <li><label for="brand-roastLevel">Roast Level: light</label></li>
-            <li><label for="brand-flavor">Flavor: crisp and clean</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: central and south America</label></li>
-            <li><label for="brand-price">Price: $5.12/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Melitta - Colombian Supreme</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: french vanilla</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Columbia</label></li>
-            <li><label for="brand-price">Price: $6.49/11oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Death Wish - Organic Whole Bean Coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: dark</label></li>
-            <li><label for="brand-flavor">Flavor: bold, dark chocolate and black cherry</label></li>
-            <li><label for="brand-bean">Bean: Arabica, Robusta</label></li>
-            <li><label for="brand-area">Area: coffee belt</label></li>
-            <li><label for="brand-price">Price: $17.48/16oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Superlost Coffee - Natural Process Coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: dark chocolate, sweet peach, key lime pie</label></li>
-            <li><label for="brand-bean">Bean: a mix of different beans</label></li>
-            <li><label for="brand-area">Area: Columbia</label></li>
-            <li><label for="brand-price">Price: $15/8oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Lavazza - Espresso Italiano</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: fruit and flowers</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: central and south America</label></li>
-            <li><label for="brand-price">Price: $8.49/16oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Peet's Coffee - Big Bang</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: fruit cup, milk chocolate, graham crust</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Africa/Arabia, America</label></li>
-            <li><label for="brand-price">Price: $18.95/16oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Good & Gather Organic - Tierra del Sol</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: dark chocolate, toffee and warm spice</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Mexico</label></li>
-            <li><label for="brand-price">Price: $7.39/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Intelligentsia - House Blend</label></li>
-            <li><label for="brand-roastLevel">Roast Level: light</label></li>
-            <li><label for="brand-flavor">Flavor: apple, citrus and milk chocolate</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Brazil, Costa Rica, El Salvador</label></li>
-            <li><label for="brand-price">Price: $16.5/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Copper Cow Coffee - Salted Caramel Ground Coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: caramel, salty, chocolate and nutty</label></li>
-            <li><label for="brand-bean">Bean: Arabica, Robusta</label></li>
-            <li><label for="brand-area">Area: Vietnamese</label></li>
-            <li><label for="brand-price">Price: $17/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Counter Culture Coffee - Big Trouble</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: caramel, nutty, dark chocolate</label></li>
-            <li><label for="brand-bean">Bean: a mix of different beans</label></li>
-            <li><label for="brand-area">Area: Honduras, Mexico</label></li>
-            <li><label for="brand-price">Price: $13.42/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Equal Exchange - Organic French Roast Coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: dark</label></li>
-            <li><label for="brand-flavor">Flavor: dark chocolate, sweet and fruity</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Nicaragua</label></li>
-            <li><label for="brand-price">Price: $6.38/10oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Dope Coffee - Organic Guatemalan</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: dark chocolate and apricot blossoms</label></li>
-            <li><label for="brand-bean">Bean: a mix of different beans</label></li>
-            <li><label for="brand-area">Area: Guatemala</label></li>
-            <li><label for="brand-price">Price: $17/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Seattle's Best Coffee - Post Alley Blend</label></li>
-            <li><label for="brand-roastLevel">Roast Level: dark</label></li>
-            <li><label for="brand-flavor">Flavor: bittersweet, toasty, decadent chocolate</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Latin America</label></li>
-            <li><label for="brand-price">Price: $12/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Bizzy Cold Brew - Smooth & Sweet</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: caramel, hazelnut</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Guatemala, Peru, and Nicaragua</label></li>
-            <li><label for="brand-price">Price: $14.99/16oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Fresh Roasted Coffee - Tanzanian Peaberry</label></li>
-            <li><label for="brand-roastLevel">Roast Level: light</label></li>
-            <li><label for="brand-flavor">Flavor: lemon, peach, and black tea</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Tanzania</label></li>
-            <li><label for="brand-price">Price: $13.95/12oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">CoffeeZyme - Coffee Cake</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: cinnamon, vanilla</label></li>
-            <li><label for="brand-bean">Bean: a mix of different coffee beans</label></li>
-            <li><label for="brand-area">Area: Brazil</label></li>
-            <li><label for="brand-price">Price: $14.99/16oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Shock coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: cinnamon, vanilla</label></li>
-            <li><label for="brand-bean">Bean: a mix of different beans</label></li>
-            <li><label for="brand-area">Area: Brazil</label></li>
-            <li><label for="brand-price">Price: $14.99/16oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">Cafés Granell - Wild Kopi Luwak Coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: medium</label></li>
-            <li><label for="brand-flavor">Flavor: smooth, earthy, nutty and with a slight hint of spice</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Indonesia</label></li>
-            <li><label for="brand-price">Price: $109.98/3.5oz</label></li>
-          </ul>
-        </li>
-
-        <li>
-          <ul class="brand-card">
-            <li><label for="brand-product">CoffeeAM - Jamaica Blue Mountain Estate Coffee</label></li>
-            <li><label for="brand-roastLevel">Roast Level: light</label></li>
-            <li><label for="brand-flavor">Flavor: chocolate</label></li>
-            <li><label for="brand-bean">Bean: Arabica</label></li>
-            <li><label for="brand-area">Area: Jamaica</label></li>
-            <li><label for="brand-price">Price: $54.95/16oz</label></li>
-          </ul>
-        </li>
+      <div class="brands-list">
+        
+      </div>
 
 
-
-      </ul>
+      
 
     </article>
 
