@@ -430,7 +430,7 @@ p{
 .pic{
     width: 700px;
     height: 400px;
-    background-image:url(map.png);
+    background-image:url(../images/map.png);
     position: absolute;
     top:0;
     bottom:0;
