@@ -9,7 +9,7 @@ const coffeeData = [
       bean: 'a mix of different beans',
       region: ['Brazil', 'Columbia', 'Honduras', 'Mexico'],
       price: '$14/12oz',
-      img:'images/la-colombe.png'
+      img:'/images/la-colombe.png'
     },
    {
      brand: 'Just Bright',
@@ -19,7 +19,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'central and south America',
      price:'$5.12/12oz',
-     img: 'images/just-bright.png'
+     img: '/images/just-bright.png'
    },
    {
      brand:'Melitta',
@@ -29,7 +29,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Columbia',
      price:'$6.49/11oz',
-     img:'images/melitta.png'
+     img:'/images/melitta.png'
     },
    {
      brand:'Death Wish',
@@ -39,7 +39,7 @@ const coffeeData = [
      bean:['Arabica', 'Robusta'],
      region:['coffee belt', 'others'],
      price:'$17.48/16oz',
-     img:'images/death-wish.png'
+     img:'/images/death-wish.png'
     },
    {
      brand:'Superlost Coffee',
@@ -49,7 +49,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Columbia',
      price:'$15/8oz',
-     img:'images/superlost.png'
+     img:'/images/superlost.png'
     },
    {
      brand:'Lavazza',
@@ -59,7 +59,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'central and south America',
      price:'$8.49/16oz',
-     img:''
+     img:'/images/lavazza.png'
     },
    {
      brand:"Peet's Coffee",
@@ -69,7 +69,7 @@ const coffeeData = [
      bean:'Arabica',
      region:['Africa','Arabia', 'America'],
      price:'$18.95/16oz',
-     img:'images/peets-coffee.png'
+     img:'/images/peets-coffee.png'
     },
    {
      brand:'Good & Gather Organic',
@@ -79,7 +79,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Mexico',
      price:'$7.39/12oz',
-     img:'images/good-gather.png'
+     img:'/images/good-gather.png'
     },
    {
      brand:'Intelligentsia',
@@ -89,7 +89,7 @@ const coffeeData = [
      bean:'Arabica',
      region:['Brazil', 'Costa Rica', 'El Salvador'],
      price:'$16.5/12oz',
-     img:'images/intelligentsia.png'
+     img:'/images/intelligentsia.png'
     },
    {
      brand:'Copper Cow Coffee',
@@ -99,7 +99,7 @@ const coffeeData = [
      bean:['Arabica', 'Robusta'],
      region:'Vietnamese',
      price:'$17/12oz',
-     img:'images/copper-cow.png'
+     img:'/images/copper-cow.png'
     },
    {
      brand:'Counter Culture Coffee',
@@ -109,7 +109,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:['Honduras', 'Mexico'],
      price:'$13.42/12oz',
-     img:'images/counter-culture.png'
+     img:'/images/counter-culture.png'
     },
    {
      brand:'Equal Exchange',
@@ -119,7 +119,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Nicaragua',
      price:'$6.38/10oz',
-     img:'images/equal-exchange.png'
+     img:'/images/equal-exchange.png'
     },
    {
      brand:'Dope Coffee',
@@ -129,7 +129,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Guatemala',
      price:'$17/12oz',
-     img:'images/dope-coffee.png'
+     img:'/images/dope-coffee.png'
     },
    {
      brand:"Seattle's Best Coffee",
@@ -139,7 +139,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Latin America',
      price:'$12/12oz',
-     img:'images/seattles-best.png'
+     img:'/images/seattles-best.png'
     },
    {
      brand:'Bizzy Cold Brew',
@@ -149,7 +149,7 @@ const coffeeData = [
      bean:'Arabica',
      region:['Guatemala', 'Peru', 'Nicaragua'],
      price:'$14.99/16oz',
-     img:'images/bizzy.png'
+     img:'/images/bizzy.png'
     },
    {
      brand:'Fresh Roasted Coffee',
@@ -159,7 +159,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Tanzania',
      price:'$13.95/12oz',
-     img:'images/fresh-roasted.png'
+     img:'/images/fresh-roasted.png'
     },
    {
      brand:'CoffeeZyme',
@@ -169,7 +169,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Brazil',
      price:'$14.99/16oz',
-     img:'images/coffeezyme.png'
+     img:'/images/coffeezyme.png'
     },
    {
      brand:'Shock',
@@ -179,7 +179,7 @@ const coffeeData = [
      bean:'a mix of different beans',
      region:'Brazil',
      price:'$14.99/16oz',
-     img:'images/shock.png'
+     img:'/images/shock.png'
     },
    {
      brand:'Cafés Granell',
@@ -189,7 +189,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Indonesia',
      price:'$109.98/3.5oz',
-     img:'images/garnell.png'
+     img:'/images/garnell.png'
     },
    {
      brand:'CoffeeAM',
@@ -199,7 +199,110 @@ const coffeeData = [
      bean:'Arabica',
      region:'Jamaica',
      price:'$54.95/16oz',
-     img:'images/coffeeam.png'
+     img:'/images/coffeeam.png'
     },
  ];
+
+
+//global variables
+
+let list = document.getElementById("brands-list");
+const showAllBtn = document.getElementById("allBrands");
+
+const filterRoast = document.getElementById("roast-filter-choice");
+const filterBean = document.getElementById("beans-filter-choice");
+
+//events
+
+//make drawCoffee defaultly run when open the page
+window.onload = drawCoffee(coffeeData);
+
+//showAllBtn did the same as default
+showAllBtn.addEventListener("click", function(){
+  drawCoffee(coffeeData)
+});
+
+filterRoast.addEventListener("input", showRoast);
+filterBean.addEventListener("input", showBean);
+
+
+function drawCoffee(coffee) {
+  console.log('hello world!!!!!');
+
+  coffee.forEach((beanCard) => {
+    const brandCard = document.createElement('div');
+    brandCard.setAttribute('class', 'brand-card');
+    const brandInner = document.createElement('div');
+    brandInner.setAttribute('class','brand-inner');  
+    
+    const brandFront = document.createElement('div');
+    brandFront.setAttribute('class','brand-front');
+    const brandPic = document.createElement('img');
+    brandPic.setAttribute('src', beanCard.img);
+    
+    const brandBack = document.createElement('div');
+    brandBack.setAttribute('class','brand-back');
+    const h3 = document.createElement("h3");
+    h3.textContent = `${beanCard.brand}`;
+    const h4 = document.createElement("h4");
+    h4.textContent = `${beanCard.name}`;
+    const cfRoast = document.createElement('p');
+    cfRoast.textContent = `Roast level: ${beanCard.roast}`;
+    const cfFlavor = document.createElement('p');
+    cfFlavor.textContent = `Flavor: ${beanCard.flavor}`;
+    const cfBean = document.createElement('p');
+    cfBean.textContent = `Bean: ${beanCard.bean}`;
+    const cfRegion = document.createElement('p');
+    cfRegion.textContent = `Region: ${beanCard.region}`;
+    const cfPrice = document.createElement('p');
+    cfPrice.textContent = `Price: ${beanCard.price}`;
+    
+    list.appendChild(brandCard);
+    brandCard.appendChild(brandInner);
+    brandInner.appendChild(brandFront);
+    brandFront.appendChild(brandPic);
+    
+    brandInner.appendChild(brandBack);
+    brandBack.appendChild(h3);
+    brandBack.appendChild(h4);
+    brandBack.appendChild(cfRoast);
+    brandBack.appendChild(cfFlavor);
+    brandBack.appendChild(cfBean);
+    brandBack.appendChild(cfRegion);
+    brandBack.appendChild(cfPrice);
+    
+    console.log('hello world!!!!!!');
+  
+  });
+  
+}
+
+function showRoast() {
+  
+  let final = [];
+  
+  coffeeData.forEach(item => {
+  if (filterRoast.value == coffeeData.roast) {
+    final.push(item);
+  }
+});
+  return(final);
+  //how to call drawCoffee
+}
+
+function showBean() {
+  
+  let final = [];
+  
+  coffeeData.forEach(item => {
+  if (filterRoast.value == coffeeData.bean) {
+    final.push(item);
+  }
+});
+  return(final);
+  //how to call drawCoffee
+}
+
+
+
 
