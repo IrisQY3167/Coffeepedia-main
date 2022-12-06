@@ -207,7 +207,8 @@ const coffeeData = [
 //global variables
 
 let list = document.getElementById("brands-list");
-const showAllBtn = document.getElementById("allBrands");
+const resetBtn = document.getElementById("clearFilter");
+//?????? how to reset filter options to default when click resetBtn?
 
 const filterRoast = document.getElementById("roast-filter-choice");
 const filterBean = document.getElementById("beans-filter-choice");
@@ -218,17 +219,18 @@ const filterBean = document.getElementById("beans-filter-choice");
 window.onload = drawCoffee(coffeeData);
 
 //showAllBtn did the same as default
-showAllBtn.addEventListener("click", function(){
+resetBtn.addEventListener("click", function(){
   drawCoffee(coffeeData)
 });
 
-filterRoast.addEventListener("input", showRoast);
-filterBean.addEventListener("input", showBean);
+filterRoast.addEventListener("change", showRoast);
+filterBean.addEventListener("change", showBean);
 
 
 function drawCoffee(coffee) {
-  console.log('hello world!!!!!');
-
+  console.log('hello world');
+  list.innerHTML = "";
+  
   coffee.forEach((beanCard) => {
     const brandCard = document.createElement('div');
     brandCard.setAttribute('class', 'brand-card');
@@ -271,36 +273,43 @@ function drawCoffee(coffee) {
     brandBack.appendChild(cfRegion);
     brandBack.appendChild(cfPrice);
     
-    console.log('hello world!!!!!!');
+    console.log('hello world!!!');
   
   });
   
 }
 
 function showRoast() {
-  
+  console.log('hello world!');
   let final = [];
   
   coffeeData.forEach(item => {
-  if (filterRoast.value == coffeeData.roast) {
-    final.push(item);
-  }
-});
-  return(final);
+    console.log(filterRoast.value);
+    console.log(item.roast);
+    if (item.roast == filterRoast.value){
+      final.push(item);
+    }
+  });
+  console.log(final);
   //how to call drawCoffee
+  drawCoffee(final);
 }
+
 
 function showBean() {
   
   let final = [];
   
   coffeeData.forEach(item => {
-  if (filterRoast.value == coffeeData.bean) {
-    final.push(item);
-  }
-});
-  return(final);
+    console.log(filterBean.value);
+    console.log(item.bean);
+    if (item.bean == filterBean.value){
+      final.push(item);
+    }
+  });
+  console.log(final);
   //how to call drawCoffee
+  drawCoffee(final);
 }
 
 
