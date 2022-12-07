@@ -119,7 +119,7 @@ const coffeeData = [
      bean:'Arabica',
      region:'Nicaragua',
      price:'$6.38/10oz',
-     img:'../images/equal-exchange.png'
+     img:'images/equal-exchange.png'
     },
    {
      brand:'Dope Coffee',
