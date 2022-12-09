@@ -166,15 +166,15 @@ div#quiz{
 }
 
 
-/* brands list page styles*/
+/* beans page styles*/
 
-#brands > h2{
-    font-size: calc(2vw + 16px);
-}
+/* beans filter styles*/
+
 
 .brandCard-control{
+    padding-top: calc(var(--padding-h2-bottom) + 2.5vw);
     padding-left: var(--padding-h2);
-    padding-bottom: var(--padding-h2-bottom);
+    padding-bottom: calc(var(--padding-h2-bottom) + 0.7vw);
 }
 
 .brandCard-control > label{
@@ -209,72 +209,70 @@ div#quiz{
     margin-left: var(--margin-p);
 }
 
+/* brandsList styles*/
+
 #brands-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: var(--margin-p);
-} 
-
-#brands-list img{
-    width: 280px;
-    height: 280px;
-}
-
-.brand-card{
-    
-    background-color: transparent;
-    width: 280px;
-    height: 280px;
-    perspective: 1000px;
-    margin: 1.2rem;
-  }
-
-.brand-inner{
-    position: relative;
-    width: 280px;
-    height: 280px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.brand-card:hover .brand-inner{
-    transform: rotateY(180deg);
-}
-
-.brand-front, .brand-back{
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-}
-
-.brand-front{
-    background-color: var(--color-beige);
-    color: black;
 }
   
-.brand-back{
-    background-color: var(--color-beige);
-    
-    overflow:scroll;
-    transform: rotateY(180deg);
+.brandCard{
+    display: grid;
+    grid-template-rows: 300px 120px 130px ;
+    width: 300px;
+    justify-content: center; /*for each div*/
+    text-align: center; /*for the content inside*/
+    margin: 20px;
 }
 
-.brand-back > h3{
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
+
+
+.brandPicture{
+    width: auto;
 }
-.brand-back > h4{
-    font-size: 2rem;
-    padding-bottom: 0.7rem;
+.brandPicture > img{
+    width: 300px;
+    border-radius: 25px 25px 0px 0px;
 }
-.brand-back > p{
-    font-size: 14px;
-    padding-bottom: 0px;
+
+
+
+.brandTitle{
+    width: 300px;
+    padding-bottom: 20px;
+    background-color: white;
 }
+
+.brandTitle h3{
+    padding: 14px;
+    color: var(--color-coffee);
+}
+
+.brandTitle h4{
+    font-size: 18px;
+    color: var(--color-brown);
+}
+
+.brandInfo{
+    overflow: scroll;
+    background-color: white;
+    border-bottom: 8px solid white;
+    border-radius: 0px 0px 25px 25px;
+    
+}
+
+.brandInfo p{
+    line-height: 1.25;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    color: var(--color-coffee);
+}
+
+.cfPrice{
+    margin-bottom: 10px;
+}
+
 
 /* general styles*/
 article{
