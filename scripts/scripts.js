@@ -202,34 +202,32 @@ const coffeeData = [
     img:'images/superlost.png'
   },
   
- ];
+];
 
 
-//global variables
-
+//GLOBAL VARIABLES
 let list = document.getElementById("brands-list");
 const resetBtn = document.getElementById("clearFilter");
-//?????? how to reset filter options to default when click resetBtn?
-
 const filterRoast = document.getElementById("roast-filter-choice");
 const filterBean = document.getElementById("beans-filter-choice");
+const filterRegion = document.getElementById("region-filter-choice");
 
-//events
-
-//make drawCoffee defaultly run when open the page
+//EVENTS
+//make drawCoffee run defaultly when open the page
 window.onload = drawCoffee(coffeeData);
-
-//showAllBtn did the same as default
+//reset all the filters' value and drawCoffee
 resetBtn.addEventListener("click", function(){
+  resetFilter();
   drawCoffee(coffeeData)
 });
-
+//events for the three options lists
 filterRoast.addEventListener("change", showRoast);
 filterBean.addEventListener("change", showBean);
+filterRegion.addEventListener("change", showRegion);
 
-
+//FUNCTIONS
+//drawCoffee will be called everytime to show the products selected
 function drawCoffee(coffee) {
-  console.log('hello world');
   list.innerHTML = "";
   
   coffee.forEach((beanCard) => {
@@ -279,43 +277,71 @@ function drawCoffee(coffee) {
     brandInfo.appendChild(cfRegion);
     brandInfo.appendChild(cfPrice);
     brandInfo.appendChild(cfEmpty);
-    
-    console.log('hello world!!!');
-  
+      
   });
   
 }
 
+//when "Roast Lv." option change
 function showRoast() {
-  console.log('hello world!');
+  //clear other filters
+  filterBean.value = 'reset';
+  filterRegion.value = 'reset';
+  //set the selected filter & products displayed
   let final = [];
-  
   coffeeData.forEach(item => {
-    console.log(filterRoast.value);
-    console.log(item.roast);
     if (item.roast == filterRoast.value){
       final.push(item);
-    }
-  });
-  console.log(final);
-  //how to call drawCoffee
-  drawCoffee(final);
-}
-
-
-function showBean() {
-  
-  let final = [];
-  
-  coffeeData.forEach(item => {
-    console.log(filterBean.value);
-    console.log(item.bean);
-    if (item.bean == filterBean.value){
+    }else if(filterRoast.value == 'reset'){
       final.push(item);
     }
   });
-  console.log(final);
-  //how to call drawCoffee
+  //call drawCoffee
   drawCoffee(final);
 }
 
+//when "Beans" option change
+function showBean() {
+  //clear other filters
+  filterRoast.value = 'reset';
+  filterRegion.value = 'reset';
+  //set the selected filter & products displayed
+  let final = [];
+  coffeeData.forEach(item => {
+    if (item.bean == filterBean.value){
+      final.push(item);
+    }else if(filterBean.value == 'mix' & item.bean != 'Arabica'){
+      final.push(item);
+    }else if(filterBean.value == 'reset'){
+      final.push(item);
+    }
+  });
+  //call drawCoffee
+  drawCoffee(final);
+}
+
+function showRegion(){
+  //clear other filters
+  filterRoast.value = 'reset';
+  filterBean.value = 'reset';
+  //set the selected filter & products displayed
+  let final =[];
+  coffeeData.forEach(item => {
+    if (item.region == filterRegion.value){
+      final.push(item);
+    }else if(filterRegion.value == 'mix' & item.region != 'Brazil'
+    & item.region != 'Columbia' & item.region != 'Mexico'){
+      final.push(item);
+    }else if(filterRegion.value == 'reset'){
+      final.push(item);
+    }
+  });
+  //call drawCoffee
+  drawCoffee(final);
+}
+
+function resetFilter(){
+  filterRoast.value = 'reset';
+  filterBean.value = 'reset';
+  filterRegion.value = 'reset';
+}

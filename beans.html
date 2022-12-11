@@ -51,33 +51,48 @@
 
     <article id="brands">
       
+
       <div class="brandCard-control">
         <label for="brandCard-filter-choice">Filter by:</label>
         
-      <select list="roast-filter-list" id="roast-filter-choice" 
-        name="roast-filter-choice">
-        <datalist id="roast-filter-list">
-          <option value="" disabled selected hidden>Roast Level</option>
-          
-          <option value="light">light</option>
-          <option value="medium">medium</option>
-          <option value="dark">dark</option>
-          
-          
-        </datalist>
-      </select>
+        <select list="roast-filter-list" id="roast-filter-choice" 
+          name="roast-filter-choice">
+          <datalist id="roast-filter-list">
+            <option value="reset">Roast Lv.</option>
+            
+            <option value="light">light</option>
+            <option value="medium">medium</option>
+            <option value="dark">dark</option>
+            
+            
+          </datalist>
+        </select>
   
-      <select list="beans-filter-list" id="beans-filter-choice" 
-        name="beans-filter-choice">
-        <datalist id="beans-filter-list">
-          <option value="" disabled selected hidden>Beans</option>
-          <option value="Arabica">Arabica</option>
-          <option value="others">others</option>
-          
-        </datalist>
-      </select>
+        <select list="beans-filter-list" id="beans-filter-choice" 
+          name="beans-filter-choice">
+          <datalist id="beans-filter-list">
+            <option value="reset">Beans</option>
+            <option value="Arabica">Arabica</option>
+            <option value="mix">mixed</option>
+            
+          </datalist>
+        </select>
 
-      <button id="clearFilter">Clear Filter</button>
+        <select list="region-filter-list" id="region-filter-choice" 
+          name="region-filter-choice">
+          <datalist id="region-filter-list">
+            <option value="reset">Region</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Columbia">Columbia</option>
+            <option value="Mexico">Mexico</option>
+            <option value="mix">others</option>
+            
+          </datalist>
+        </select>
+
+        <button id="clearFilter">Clear Filter</button>
+
+        <p>NOTICE: You can only apply one filter at a time!</p>
 
       </div>
 

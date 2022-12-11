@@ -169,144 +169,141 @@ div#quiz{
 /* beans page styles*/
 
 /* beans filter styles*/
-
-
 .brandCard-control{
-    padding-top: calc(var(--padding-h2-bottom) + 2.5vw);
-    padding-left: var(--padding-h2);
-    padding-bottom: calc(var(--padding-h2-bottom) + 0.7vw);
+  padding-top: calc(var(--padding-h2-bottom) + 2.5vw);
+  padding-bottom: calc(var(--padding-h2-bottom) + 0.7vw);
+  padding-left: var(--padding-h2);
 }
 
 .brandCard-control > label{
-    font-size: 20px;
-    font-family: var(--font-p);
-    font-weight: 600;
-    color: var(--color-coffee);
+  font-size: 20px;
+  font-family: var(--font-p);
+  font-weight: 600;
+  color: var(--color-coffee);  
 }
 
-#roast-filter-choice , #beans-filter-choice{
-    width: 120px;
-    height: 30px;
-    border: 1px solid var(--color-brown);
-    font-size: 18px;
-    color: var(--color-coffee);
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 2px 3px var(--color-brown);
-    margin-left: var(--margin-p);
+.brandCard-control > p{
+  padding-top: 1px;
+  padding-left: var(--padding-h2);
 }
 
+#roast-filter-choice , #beans-filter-choice , #region-filter-choice{
+  width: 120px;
+  height: 30px;
+  border: 1px solid var(--color-brown);
+  font-size: 18px;
+  color: var(--color-coffee);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 3px var(--color-brown);
+  margin-left: var(--margin-p);
+  margin-bottom: var(--margin-p);
+}
 
 #clearFilter{
-    height: 30px;
-    cursor: pointer;
-    border: 1px solid var(--color-brown);
-    font-size: 18px;
-    color: white;
-    background-color: var(--color-coffee);
-    border-radius: 5px;
-    box-shadow: 2px 3px var(--color-brown);
-    margin-left: var(--margin-p);
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid var(--color-brown);
+  font-size: 18px;
+  color: white;
+  background-color: var(--color-coffee);
+  border-radius: 5px;
+  box-shadow: 2px 3px var(--color-brown);
+  margin-left: var(--margin-p);
 }
 
 /* brandsList styles*/
-
 #brands-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-  
+
 .brandCard{
-    display: grid;
-    grid-template-rows: 300px 120px 130px ;
-    width: 300px;
-    justify-content: center; /*for each div*/
-    text-align: center; /*for the content inside*/
-    margin: 20px;
+  display: grid;
+  grid-template-rows: 300px 120px 130px ;
+  width: 300px;
+  justify-content: center; /*for each div*/
+  text-align: center; /*for the content inside*/
+  margin: 20px;
 }
-
-
 
 .brandPicture{
-    width: auto;
+  width: auto;
 }
 .brandPicture > img{
-    width: 300px;
-    border-radius: 25px 25px 0px 0px;
+  width: 300px;
+  border-radius: 25px 25px 0px 0px;
 }
 
-
-
 .brandTitle{
-    width: 300px;
-    padding-bottom: 20px;
-    background-color: white;
+  width: 300px;
+  padding-bottom: 20px;
+  background-color: white;
 }
 
 .brandTitle h3{
-    padding: 14px;
-    color: var(--color-coffee);
+  padding: 14px;
+  color: var(--color-coffee);
 }
 
 .brandTitle h4{
-    font-size: 18px;
-    color: var(--color-brown);
+  font-size: 18px;
+  color: var(--color-brown);
 }
 
 .brandInfo{
-    overflow: scroll;
-    background-color: white;
-    border-bottom: 8px solid white;
-    border-radius: 0px 0px 25px 25px;
-    
+  overflow: scroll;
+  background-color: white;
+  border-bottom: 8px solid white;
+  border-radius: 0px 0px 25px 25px;
 }
 
 .brandInfo p{
-    line-height: 1.25;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    color: var(--color-coffee);
+  line-height: 1.25;
+  padding: 0px 1px 5px 1px;
+  color: var(--color-coffee);
 }
 
 .cfPrice{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 
 /* general styles*/
 article{
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h2{
-    font-size: var(--font-size-h2);
-    font-family:var(--font-title);
-    padding-top: var(--padding-h2);
-    padding-bottom: var(--padding-h2-bottom);
-    padding-left: var(--padding-h2);
+  font-size: var(--font-size-h2);
+  font-family:var(--font-title);
+  padding-top: var(--padding-h2);
+  padding-bottom: var(--padding-h2-bottom);
+  padding-left: var(--padding-h2);
   }
 
 h3{
-    color: var(--color-coffee);
-    font-size: var(--font-size-h3);
-    font-family: var(--font-title);
-    padding-top:var(--padding-h3-bottom);
-    padding-bottom:var(--padding-h3-bottom);
+  color: var(--color-coffee);
+  font-size: var(--font-size-h3);
+  font-family: var(--font-title);
+  padding-top:var(--padding-h3-bottom);
+  padding-bottom:var(--padding-h3-bottom);
 }
 
 p{
-    font-family: var(--font-p);
-    color: var(--color-brown);
-    line-height: 1.8;
-    padding-left: var(--padding-p);
-    padding-right: var(--padding-p);
-    padding-bottom: var(--padding-p-bottom);
+  font-family: var(--font-p);
+  color: var(--color-brown);
+  line-height: 1.8;
+  padding-left: var(--padding-p);
+  padding-right: var(--padding-p);
+  padding-bottom: var(--padding-p-bottom);
 }
+
 
 /*Beginning of Story Styling*/
 
