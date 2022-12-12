@@ -47,7 +47,7 @@ h1#head-font{
     margin-bottom: 5vh;
 }
 header{
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
 } 
 header h1{
     font-family:'DM Serif Display', serif;
@@ -69,7 +69,7 @@ div#quiz{
 .hamburger {
     position: fixed;
     z-index: 100;
-    top: 1rem;
+    top: 0.8rem;
     right: 1rem;
     padding: 4px;
     border: #72481F solid 1px;
@@ -516,10 +516,24 @@ h1.modal-body{
 /*End of map styling*/
 
 
+/*Start of ABOUT styling*/
+.ref-box{ 
+  padding-left: var(--padding-h3);
+}
+
+.ref-content{
+  padding-bottom: 2vh;
+}
+
+
+
+
+/*End of ABOUT styling*/
+
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 @media screen and (min-width: 750px){
     button.hamburger{
-      display: none
+      display: none;
     }
     ul.wide-nav{
       text-align: center;

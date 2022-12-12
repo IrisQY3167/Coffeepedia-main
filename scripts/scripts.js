@@ -239,6 +239,7 @@ function drawCoffee(coffee) {
     brandPicture.setAttribute('class', 'brandPicture');
     const brandPic = document.createElement('img');
     brandPic.setAttribute('src', beanCard.img);
+    brandPic.alt = `Coffee Pic ${beanCard.brand}`;
 
     const brandTitle = document.createElement('div');
     brandTitle.setAttribute('class','brandTitle'); 
