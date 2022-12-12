@@ -513,22 +513,35 @@ h1.modal-body{
     transform: scale(1)
 }
 
+#map-white-space{
+  height: 550px;
+  background: var(--color-beige);
+}
+
 /*End of map styling*/
 
 
 /*Start of ABOUT styling*/
 .ref-box{ 
   padding-left: var(--padding-h3);
+  margin-bottom: 3vw;
 }
 
-.ref-content{
+.ref-list{
   padding-bottom: 2vh;
 }
 
-
-
+.ref-content-list, .ref-code-list{
+  list-style: none;
+}
+.ref-content-list>h4, .ref-code-list>h4{
+  line-height: 1.5;
+  padding-top: 0.5em;
+}
 
 /*End of ABOUT styling*/
+
+
 
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 @media screen and (min-width: 750px){
