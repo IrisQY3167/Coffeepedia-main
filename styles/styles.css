@@ -497,7 +497,7 @@ h1.modal-body{
 /*End of map styling*/
 
 
-/*Start of ABOUT styling*/
+/*Start of Reference styling*/
 .ref-box{ 
   padding-left: var(--padding-h3);
   margin-bottom: 3vw;
@@ -515,7 +515,8 @@ h1.modal-body{
   padding-top: 0.5em;
 }
 
-/*End of ABOUT styling*/
+/*End of Reference styling*/
+
 
 .about-body{
   background-color: #FFF4E9;
