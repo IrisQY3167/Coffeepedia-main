@@ -81,7 +81,7 @@ div#quiz{
   }
   .menu {
     position: fixed;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     transition: transform 0.2s;
     top: 0;
     left: 0;
@@ -135,36 +135,12 @@ img#background{
     right: 50%;
     background-color: transparent;
     color: #FFFFFF;
-    border-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
     font-family: 'Raleway', sans-serif;
     font-size: calc(10px + 1vw);
-    transition: all 0.5s;
     cursor: pointer;
+    padding: 0.25em;
 }
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-.button span:after {
-    content: '\2228';
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    transition: 0.5s;
-}  
-.button:hover span {
-    padding-bottom: 5vh;
-} 
-.button:hover span:after {
-    opacity: 1;
-}
-div#quiz{
-    height: 800px;
-}
-
 
 /* beans page styles*/
 
@@ -540,6 +516,19 @@ h1.modal-body{
 }
 
 /*End of ABOUT styling*/
+
+.about-body{
+  background-color: #FFF4E9;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+iframe{
+  width: 80%;
+  height: 500px;
+}
 
 
 
