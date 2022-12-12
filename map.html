@@ -40,7 +40,25 @@
      </nav> 
     </div>
   </header>
-
+  <div class="modal fade" id="guineaModal" tabindex="-1" aria-labelledby="guineaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="guineaModalLabel">Papua New Guinea
+            info</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- info goes here --->
+          The coffee from the Eastern Highlands of Papua New Guinea is bold and satisfying. Papua New Guinea coffee is a smooth and notably sweet coffee with a medium body and acidity level. The initial taste reflects dark berry flavors and ends up dark chocolate, but with a remarkably clean finish.
+          Although Papua New Guinea coffee is an Indo-Pacific coffee, it separates itself from the others in nearly every way. The most distinct difference is that the coffee from Papua New Guinea is wet processed and not wet hulled like other coffees from similar regional varieties. The difference in processing creates a cup with a very different flavor and body, a developed sweetness is prominent and earthy, vegetal flavors from these beans are rare and are usually due to poor processing or drying.          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+        </div>
+      </div>
+    </div>
+  </div>  
     <div class="modal fade" id="brazilModal" tabindex="-1" aria-labelledby="brazilModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -184,16 +202,37 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="ethiopiaModal" tabindex="-1" aria-labelledby="ethiopiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ethiopiaModalLabel">Ethiopia
+                info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- info goes here --->
+              Coffee production in Ethiopia is a longstanding tradition that dates back dozens of centuries. Ethiopia is where Coffea arabica, the coffee plant, originates.
+              Ethiopia's coffee can be divided into three main categories, depending on their method of production: Forest Coffees, from wild coffee trees grown mostly in the southwest of the country; Garden Coffee, from trees typically planted around a homestead or other dwelling; Plantation Coffees, from trees grown intensively on large farms.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+            </div>
+          </div>
+        </div>
+      </div>
       
     <div class="pic">
-    <img id="guinea" src="images/pin1.png" alt="">
+    <img id="guinea" src="images/pin1.png" alt=""alt=""data-bs-toggle="modal" data-bs-target="#guineaModal">
     <img id="brazil" src="images/pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#brazilModal">
     <img id="sumatra" src="images/pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#sumatraModal">
     <img id="honduras" src="images/pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#hondurasModal">
     <img id="peru" src="images/pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#peruModal">
     <img id="guatemala" src="images/pin1.png" alt="" data-bs-toggle="modal" data-bs-target="#guatemalaModal">
-    <img id="columbia" src="images/pin1.png" alt="" data-bs-toggle="#columbiamodal" data-bs-target="#Modal">
-    <img id="ethiopia" src="images/pin1.png" alt="">
+    <img id="columbia" src="images/pin1.png" alt="" alt="" 
+    data-bs-toggle="modal" data-bs-target="#columbiaModal">
+    <img id="ethiopia" src="images/pin1.png" alt=""data-bs-toggle="modal" data-bs-target="#ethiopiaModal" >
      
     </div>
 
